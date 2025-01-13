@@ -10,11 +10,12 @@ header{
    right: 0;
 }
 
-.logo-and-name{
+.left-section{
     display: flex;
     /* gap: 10px; */
     /* margin: 0px 0 0 20px; */
     align-items: center;
+    /* margin: 0 -500px 0 0; */
 }
 
 .logo img{
@@ -28,21 +29,41 @@ header{
     color: rgb(255, 255, 255);
 }
 
-header nav ul{
+.middle-section {
     display: flex;
     align-items: center;
+    flex: 1;
+    margin: 0 0 0 50px;
 }
 
-header nav ul li a{
-    color: #fff;
+.nav{
+    margin: 0 10px 0 10px;
+}
+
+.nav a {
     text-decoration: none;
+    color: white;
     font-weight: bold;
-    
+}
+
+.nav a:hover{
+    color: rgb(238, 151, 151);
+}
+
+.right-section{
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .contact-us{
-    padding: 10px;
-    width: 70px;
-    margin: 0px 20px 0 0;
+    padding: 10px 15px 10px 15px;
+    border-radius: 15px;
+    border: none;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
 }
 
