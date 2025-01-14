@@ -2,9 +2,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: teal;
+    /* background-color: teal; */
     column-gap: 20px;
-    margin: 0 200px 0 200px;
+    margin: 0 250px 0 250px;
+    flex-wrap: nowrap;
     
     /* min-height: fit-content; */
 
@@ -13,6 +14,11 @@
 .partA{
     display: flex;
     flex-direction: column;
+    gap: 32px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex: 1 0 0px;
+    flex-wrap: nowrap;
 
 }
 
@@ -27,6 +33,7 @@
     border-radius: 16px;
     cursor: pointer;
     font-weight: 500;
+    flex-wrap: nowrap;
 
 }
 
@@ -43,13 +50,72 @@
 .check-release{
     display: flex;
     align-items: center;
+    flex-wrap: nowrap;
 }
 .check-release img{
     width: 18px;
-    filter: invert(100%) brightness(100%);
+    filter: hue-rotate(180deg) saturate(1.5) brightness(1.2) contrast(1.2);
+
     transition: transform 0.2s ease-in-out;
 }
 
+.about-section{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 24px;
+}
+
+.main-about{
+    font-size: 48px;
+    font-weight: 500;
+}
+
+.support-about{
+    color: rgb(131, 139, 139);
+}
+
+.download-app{
+    display: flex;
+    flex: none;
+    gap: 10px;
+}
+
+.download-app a img{
+    height: 150px;
+    margin: -40px 0;
+}
+
+.customers{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 16px;
+    flex: none;
+    align-items: center;
+}
+
+
+.images{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex-wrap: nowrap;
+}
+
+.images img{
+    width: 27px;
+    height: 27px;
+    border: none;
+   
+    background-image: linear-gradient(45deg, #FFFF00, #666666, #000000);
+
+
+    border-radius: 25px;
+}
+
+.customers p{
+    color: rgb(131, 139, 139);
+}
 .partB img{
-    width: 400px;
+    width: 380px;
 }
