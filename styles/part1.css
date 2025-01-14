@@ -1,0 +1,43 @@
+.hero-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: teal;
+    column-gap: 20px;
+    margin: 0 200px 0 200px;
+    
+    /* min-height: fit-content; */
+
+}
+
+.partA{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.new-release{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 15px;
+    font-size: 12px;
+}
+
+.release{
+    background-color: rgb(233, 233, 51);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.check-release{
+    display: flex;
+    align-items: center;
+}
+.check-release img{
+    width: 30px;
+}
+
+.partB img{
+    width: 400px;
+}
