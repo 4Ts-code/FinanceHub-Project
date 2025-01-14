@@ -20,8 +20,18 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    column-gap: 15px;
-    font-size: 12px;
+    column-gap: 12px;
+    font-size: 14px;
+    box-shadow: 0 0 0 1px inset rgb(227, 232, 239);
+    padding: 4px 10px 4px 4px;
+    border-radius: 16px;
+    cursor: pointer;
+    font-weight: 500;
+
+}
+
+.new-release:hover .check-release img{
+    transform: translateX(10%);
 }
 
 .release{
@@ -35,7 +45,9 @@
     align-items: center;
 }
 .check-release img{
-    width: 30px;
+    width: 18px;
+    filter: invert(100%) brightness(100%);
+    transition: transform 0.2s ease-in-out;
 }
 
 .partB img{
