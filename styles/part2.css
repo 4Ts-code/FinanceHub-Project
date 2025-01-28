@@ -1,0 +1,166 @@
+
+    /* Some craxy nested flexboxes  */
+.grow-your-wealth{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 40px;
+    margin: 0 200px 0 200px;
+
+}
+
+
+/* First Section  */
+.part2-head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+    max-width: 550px;
+}
+
+
+.part2-head h1{
+    font-size: 2.2rem;
+    font-weight: 500;
+}
+
+
+.part2-head p{
+    color: rgb(131, 139, 139);
+    font-size: 1.2rem;
+}
+
+/* Second Section  */
+
+.part2-tail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    /* background-color: brown; */
+    width: 100%;
+}
+
+/* Nested flexbox  */
+
+.container{
+    display: flex;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    background-color: rgba(198, 211, 190, 0.651);
+    border: 0.1px solid rgb(166, 172, 162,0.2) ;
+    border-radius: 20px;
+    gap: 40px;
+
+    backdrop-filter: blur(10px);
+    
+
+    flex: 0 1 auto;
+    min-width: 0; 
+}
+
+
+.grow-card{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 50px;
+    
+    
+}
+
+.grow-card .heading{
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0 auto;
+}
+
+.grow-card .info{
+    font-size: 1rem;
+    color: rgb(46, 53, 53);
+    /* max-width: 200px; */
+}
+
+
+.grow-card .button{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 5px;
+    background-color: rgb(20, 44, 20);
+    /* margin-bottom: 50px; */
+    padding: 0.7em 1.2em;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.2s ease;
+}
+
+.grow-card .button a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    
+}
+
+.grow-card .button img {
+    
+    width: 18px;
+    filter: invert(1);
+
+    transition: all 0.2s ease-in-out;
+
+}
+
+.grow-card .button:hover{
+    background-color: rgba(47, 77, 47, 0.815) ;
+
+}
+
+.grow-card .button:hover img{
+    transform: translateX(50%);
+    
+}
+
+
+.grow-card .left-img{
+    width: 250px;
+    flex: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.grow-card ,.left-img:hover{
+    transform: scale(1.1);
+}
+
+
+.card-component{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    gap: 15px;
+}
+
+.card{
+    width: 250px;
+    height: 60px;
+    background-color:#ffffff;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.205);
+
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    transition: all 0.2s ease-in;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    background-color: transparent;
+}
