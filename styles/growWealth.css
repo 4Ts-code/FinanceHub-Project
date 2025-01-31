@@ -167,8 +167,8 @@
 }
 
 .grow-image{
-    flex: 1 0 0px;
-    width: 1px;
+    
+    width: 50%;
     /* width: 50%; */
     position: relative;
     overflow: hidden;
@@ -190,6 +190,7 @@
     
 }
 
+/* Gradients  */
 .grow-image::before, 
 .grow-image::after{
     content: "";
