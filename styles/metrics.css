@@ -1,0 +1,105 @@
+ /* Styles for the metrics Section  */
+
+ .metrics-insights{
+    display: flex;
+    flex-direction: column;
+    /* background-color: red; */
+    align-items: center;
+    justify-content: flex-start;
+    flex: none;
+    gap: 70px;
+    height: min-content;
+    width: 100%;
+    position: relative;
+ }
+
+
+ .metrics-cont{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 48px 32px;
+    background-color: rgb(255, 255, 255);
+    flex-wrap: nowrap;
+    width: 100%;
+ }
+
+
+ .metrics-head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 34px;
+    height: min-content;
+    max-width: 550px;
+    width: 100%;
+    flex-wrap: nowrap;
+    position: relative;
+ }
+
+ .metrics-head .heading{
+    font-size: 42px;
+    font-weight: 500;
+    line-height: 36px;
+    text-align: center;
+    
+ }
+
+
+ .metrics-head .sub-heading{
+    font-size: 25px;
+    color: rgb(117, 117, 117);
+    text-align: center;
+ }
+
+
+
+
+ .metrics{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 64px;
+    /* background-color: crimson; */
+    flex-wrap: nowrap;
+    height: min-content;
+    flex: none;
+    /* max-width: 1000px; */
+    width: 100%;
+ }
+
+
+ .metric-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    gap: 24px;
+    height: min-content;
+    flex: none;
+    width: 100%;
+ }
+
+
+ .metric-number{
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
+ }
+
+
+ .metric-title{
+    font-size: 22px;
+    font-weight: 500;
+ }
+
+ .explanation{
+    font-size: 17px;
+    color: rgb(100, 100, 100);
+    text-align: center;
+ }
