@@ -1,35 +1,53 @@
 
     /* Some craxy nested flexboxes  */
 .grow-your-wealth{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: flex-start;
+   flex-wrap: nowrap;
+   gap: 0;
+   overflow: visible;
+   height: min-content;
+   position: relative;
+   padding: 48px 32px;
+   width: 100%;
+}
+
+.grow-your-wealth-cont{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     gap: 40px;
-    margin: 0 200px 0 200px;
-
+    overflow: visible;
+    position: relative;
+    flex-wrap: nowrap;
+    max-width: 900px;
+    width: 100%;
 }
-
 
 /* First Section  */
 .part2-head{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 35px;
+    gap: 24px;
     max-width: 550px;
+    width: 100%;
+    flex: none;
 }
 
 
 .part2-head h1{
-    font-size: 2.2rem;
+    font-size: 34px;
     font-weight: 500;
 }
 
 
 .part2-head p{
-    color: rgb(131, 139, 139);
-    font-size: 1.2rem;
+    color: rgb(117, 117, 117);
+    font-size: 19px;
 }
 
 /* Second Section  */
@@ -37,9 +55,11 @@
 .part2-tail{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 40px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 14px;
     /* background-color: brown; */
+    height: min-content;
     width: 100%;
 }
 

@@ -6,7 +6,30 @@
 }
 
 body{
-    margin-top: 120px;
+    /* margin-top: 120px;
+     */
     margin-bottom: 1000px;
     /* background-color: rgb(95, 95, 143); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.main{
+    
+    
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    flex-wrap: nowrap;
+    gap: 0px;
+    height: min-content;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+
 }
