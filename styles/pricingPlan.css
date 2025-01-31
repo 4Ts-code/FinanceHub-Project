@@ -1,0 +1,247 @@
+.pricing-plan{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: black;
+    gap: 0;
+    height: min-content;
+    width: 100%;
+    flex: none;
+}
+
+
+
+.pricing-plan-cont{
+    display: flex;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 40px;
+    background-color: black;
+    padding: 48px 32px;
+    height: min-content;
+    width: 100%;
+}
+
+
+.pp-head{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: flex-start;
+
+   max-width: 550px;
+
+   gap: 24px;
+   height: min-content;
+   width: 100%;
+   flex: none;
+    
+}
+
+
+.pp-head .heading{
+    font-size: 36px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.pp-head .sub-heading{
+    font-size: 20px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.pp-head .time{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: min-content;
+    width: 100%;
+}
+
+.pp-head .time p{
+    font-size: 16px;
+    background-color: white;
+    color: black;
+    padding: 8px 24px;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+
+.pp-tail{
+    display: grid;
+    grid-template-rows: repeat(2, minmax(50px, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  
+    column-gap: 24px;
+    row-gap: 24px;
+
+    max-width: 1000px;
+    width: 100%;
+
+    height: min-content;
+    
+
+}
+
+
+.grid-card{
+    /* width: 100px;
+    height: 100px; */
+    background-color: rgb(32, 32, 32);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 32px;
+    padding: 24px;
+    height: 100%;
+    border-radius: 20px;
+    /* backdrop-filter: blur(10px); */
+}
+
+
+.grid-card .card-details{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 32px;
+    height: min-content;
+    width: 100%;
+    flex: none;
+}
+
+
+.card-details .name{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.card-details .amount{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: min-content;
+    gap: 10px;
+    flex: none;
+    width: 100%;
+}
+
+.amount .money{
+    font-size: 24px;
+    font-weight: 600;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+}
+
+.amount .money span{
+    background-color:rgb(239, 255, 167) ;
+    padding: 4px 8px;
+    font-size: 13px;
+    color: black;
+    border-radius: 8px;
+    border: 2px solid rgb(242, 254, 141);
+}
+
+
+
+.amount .time{
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+
+.for-who{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 12px;
+    height: min-content;
+    width: 100%;
+    flex: none;
+}
+
+.for-who .who{
+    font-size: 13px;
+    font-weight: 700;
+}
+
+
+.for-who .benefits{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 12px;
+    height: min-content;
+    width: 100%;
+}
+
+.for-who .benefits p{
+    font-size: 16px;
+    font-weight: 600;
+    position: relative;
+    /* transform: translateX(30%); */
+    margin-left: 22px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.for-who .benefits p::before{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(23, 204, 17);
+
+    border-radius: 5px;
+
+    /* top: 0px; */
+    left: -19px;
+
+}
+
+
+
+
+.grid-card .card-button{
+    background-color: white;
+    color: black;
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 12px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+}
+
+.grid-card .popular-button{
+    background-color:rgb(239, 255, 167) ;
+    border: 5px solid rgb(242, 254, 141);
+    transition: all 0.2s ease-in;
+}
+
+.grid-card .popular-button:hover{
+    background-color: rgb(224, 240, 81);
+}
+
+
+ 
