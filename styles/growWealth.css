@@ -23,7 +23,7 @@
     overflow: visible;
     position: relative;
     flex-wrap: nowrap;
-    max-width: 900px;
+    max-width: 1000px;
     width: 100%;
 }
 
@@ -65,97 +65,185 @@
 
 /* Nested flexbox  */
 
-.container{
+.container-1{
     display: flex;
-    align-items: center;
-    /* flex-wrap: wrap; */
-    background-color: rgba(198, 211, 190, 0.651);
-    border: 0.1px solid rgb(166, 172, 162,0.2) ;
-    border-radius: 20px;
+    align-items: flex-end;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    background-color: rgb(249, 249, 249);
+    /* background-color: crimson; */
+    border-radius: 10px;
+    border: 1px solid rgb(232, 232, 232);
     gap: 40px;
-
-    backdrop-filter: blur(10px);
-    
+    flex: none;
+    height: min-content;
+    width: 100%;
+    padding: 32px 32px 0;
 
     flex: 0 1 auto;
     min-width: 0; 
+    
 }
 
 
-.grow-card{
+.grow-card-effortless{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 20px;
-    padding: 50px;
-    
-    flex: 1;
+    justify-content: flex-start;
+    gap: 24px;
+    padding: 0 0 32px;
+    height: min-content;
+    width: 1px;
+    flex: 1 0 0px;
 }
 
+.grow-card-effortless .heading,
 .grow-card .heading{
-    font-size: 1.1rem;
+    font-size: 20px;
     font-weight: 600;
-    margin: 0 auto;
+    line-height: 26px;
+    letter-spacing: -.01em;
 }
 
-.grow-card .info{
-    font-size: 1rem;
-    color: rgb(46, 53, 53);
+.grow-card-effortless .info,
+.grow-card .info,
+.part2-head p{
+    font-size: 18px;
+    color: rgb(100, 100, 100);
+    line-height: 26px;
     /* max-width: 200px; */
 }
 
 
-.grow-card .button{
+.grow-card-effortless .button{
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    gap: 5px;
-    background-color: rgb(20, 44, 20);
-    /* margin-bottom: 50px; */
-    padding: 0.7em 1.2em;
+    justify-content: center;
+    gap: 4px;
+    background-color: rgb(44, 44, 44);
+    height: min-content;
+    padding: 12px 16px;
     cursor: pointer;
     border-radius: 10px;
     transition: all 0.2s ease;
 }
 
-.grow-card .button a {
+.grow-card-effortless .button a {
     text-decoration: none;
     color: white;
-    font-size: 1rem;
-    
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: -.01em;
+    line-height: 24px;
 }
 
-.grow-card .button img {
+.grow-card-effortless .button .img-cont{
+    flex: none;
+    height: 20px;
+    width: 20px;
+    overflow: hidden;
+}
+
+
+.grow-card-effortless .button img {
     
-    width: 18px;
+    width: 100%;
+    height: 100%;
     filter: invert(1);
 
     transition: all 0.2s ease-in-out;
 
 }
 
-.grow-card .button:hover{
+.grow-card-effortless .button:hover{
     background-color: rgba(47, 77, 47, 0.815) ;
 
 }
 
-.grow-card .button:hover img{
-    transform: translateX(50%);
+.grow-card-effortless .button:hover img{
+    transform: translateX(15%);
     
 }
 
+.grow-image{
+    flex: 1 0 0px;
+    width: 1px;
+    /* width: 50%; */
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 1.705/1;
+    border-left: 1px solid rgb(232, 232, 232);
+}
 
-.grow-card .left-img{
-    width: 250px;
+.grow-image .left-img{
+    position: absolute;
+    inset: 0;
+    /* aspect-ratio: 1.705/1; */
+    bottom: unset;
+    /* top: 0; */
+    height: 100%;
+    right: 1px;
+    width: 100%;
+    object-fit: contain;
+    
+    
+}
+
+.grow-image::before, 
+.grow-image::after{
+    content: "";
+    background: linear-gradient(270deg, rgba(250, 250, 250, 0) 0%, rgb(250, 250, 250) 100%);
+    position: absolute;
+    bottom: 0;
+    
+    top: 0;
+    overflow: hidden;
+    width: 150px;
+    z-index: -1;
+}
+
+.grow-image::before{
+    background: linear-gradient(270deg, rgba(250, 250, 250, 0) 0%, rgb(250, 250, 250) 100%);
+    left: -1px;
+
+}
+
+.grow-image::after{
+    background: linear-gradient(90deg, rgba(250, 250, 250, 0) 0%, rgb(249, 249, 249) 100%);
+    right: 0;
+}
+
+
+
+.container-2{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
     flex: none;
-    transition: all 0.5s ease-in-out;
+    gap: 14px;
+    position: relative;
+    height: min-content;
+    width: 100%;
 }
 
-.grow-card ,.left-img:hover{
-    transform: scale(1.1);
+
+.grow-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 40px;
+    padding: 32px;
+    height: min-content;
+    flex: 1 0 0px;
+    width: 1px;
+    background-color: rgb(252, 252, 252);
+    border: 1px solid rgb(232, 232, 232);
+    border-radius: 10px;
+    
+
 }
-
-
 .card-component{
     display: flex;
     flex-direction: column;
