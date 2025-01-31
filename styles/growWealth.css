@@ -41,7 +41,7 @@
 
 .part2-head h1{
     font-size: 34px;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 
@@ -101,7 +101,7 @@
 .grow-card-effortless .heading,
 .grow-card .heading{
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 700;
     line-height: 26px;
     letter-spacing: -.01em;
 }
@@ -133,7 +133,7 @@
     text-decoration: none;
     color: white;
     font-size: 15px;
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: -.01em;
     line-height: 24px;
 }
