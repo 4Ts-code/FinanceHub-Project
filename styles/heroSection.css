@@ -129,19 +129,19 @@
 }
 
 
-.images{
+.customers .images{
     display: flex;
     align-items: center;
     gap: 5px;
     flex-wrap: nowrap;
 }
 
-.images img{
+.customers .images img{
     width: 27px;
     height: 27px;
     border: none;
    
-    background-image: linear-gradient(45deg, #FFFF00, #666666, #000000);
+    background-image: linear-gradient(45deg, #72726b8e, #493b3b63, #7532325d);
 
 
     border-radius: 25px;
