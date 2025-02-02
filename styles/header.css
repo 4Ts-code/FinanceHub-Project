@@ -1,6 +1,6 @@
 header{
    display: flex;
-   background-color: black;
+   background-color: rgba(0, 0, 0, 0.938);
    justify-content: space-between;
    
    height: 70px;
@@ -9,6 +9,9 @@ header{
    left: 0;
    right: 0;
    z-index: 100;
+
+
+   backdrop-filter: blur(10px);
 }
 
 .left-section{
