@@ -1,0 +1,229 @@
+
+
+.testimonials{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0;
+    position: relative;
+    width: 100%;
+    height: min-content;
+    flex-wrap: nowrap;
+}
+
+
+.testimonials-cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: min-content;
+    
+    padding: 48px 32px; 
+    flex: none;
+    gap: 40px;
+    max-width: 1000px;
+    width: 100%;
+
+}
+
+.testimonials-cont .header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    max-width: 600px;
+    height: min-content;
+    width: 100%;
+}
+
+
+.testimonials-cont .header .main-heading{
+    font-size: 38px;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+.testimonials-cont .header .sub-heading{
+    font-size: 20px;
+    /* font-weight: 500; */
+    color: rgb(117, 117, 117);
+    text-align: center;
+}
+
+
+.testimonials-cont .main{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    height: min-content;
+    width: 100%;
+}
+.main .cards {
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    height: max-content;
+    width: 100%;
+
+    /* the gradients at the end  */
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 12.5%, rgb(0, 0, 0) 87.5%, rgba(0, 0, 0, 0) 100%);
+}
+
+
+.testimonials-cont .main .cards .test-card{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    gap: 20px;
+    padding: 40px;
+    height: min-content;
+    border: 1px solid rgb(240, 240, 240);
+    border-radius: 10px;
+    box-shadow: 0 6px 15px #eaeaea;
+    width: 358px;
+    /* flex: 0 1 auto; */
+    flex-shrink: 0;
+
+
+
+
+}
+
+
+.test-card .statement{
+    font-size: 15px;
+}
+
+
+.test-card .about{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    height: min-content;
+    flex: 1 0 0px;
+    width: 100%;
+    position: relative;
+    margin-left: 50px;
+}
+
+.test-card .about::before{
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    /* background-color: red; */
+    left: -50px;
+    border-radius: 20px;
+   
+}
+
+.test-card .one::before{
+    background: url(../Public/test-1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.test-card .two::before{
+    background: url(../Public/test-2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.test-card .three::before{
+    background: url(../Public/test-3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.test-card .four::before{
+    background: url(../Public/test-4.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.test-card .five::before{
+    background: url(../Public/test-5.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.test-card .six::before{
+    background: url(../Public/test-6.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.about .name,
+.about .position{
+    color: black;
+    font-size: 13px;
+}
+
+.about .position{
+    color: rgb(141, 141, 141);
+}
+
+
+
+/* Animations  */
+
+.testimonials-cont .main .top{
+    /* animation: moveLeftRight 10s linear infinite alternate; */
+    animation: moveCards 10s linear infinite;
+}
+
+
+@keyframes moveLeftRight {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(100%); /* Move to the right */
+    }
+    100% {
+      transform: translateX(0); /* Return to original position */
+    }
+  }
+
+
+  @keyframes moveCards {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+
+  .testimonials-cont .main .down{
+    animation: moveRightLeft 10s infinite alternate;
+  }
+
+
+  @keyframes moveRightLeft {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(-100%); /* Move to the left */
+    }
+    100% {
+      transform: translateX(0); /* Return to original position */
+    }
+  }
