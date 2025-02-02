@@ -182,8 +182,8 @@
 /* Animations  */
 
 .testimonials-cont .main .top{
-    /* animation: moveLeftRight 10s linear infinite alternate; */
-    animation: moveCards 10s linear infinite;
+    animation: moveLeftRight 10s linear infinite alternate;
+    
 }
 
 
@@ -200,14 +200,8 @@
   }
 
 
-  @keyframes moveCards {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
-}
+  
+
 
 
 
