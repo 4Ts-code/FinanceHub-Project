@@ -1,0 +1,80 @@
+.trustees{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    position: relative;
+    height: min-content;
+    width: 100%;
+    color: white;
+}
+
+
+.trustees-cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex: none;
+    padding: 48px 32px;
+    height: min-content;
+    max-width: 1000px;
+    width: 100%;
+}
+
+
+.trustees-cont .trustees-head{
+    font-size: 16px;
+    text-align: center;
+}
+
+
+.trustees-cont .trustees-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    height: min-content;
+    max-width: 800px;
+    width: 100%;
+    flex-wrap: nowrap;
+
+}
+
+.trustees-main .company-cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: min-content;
+    flex: none;
+    width: 100%;
+}
+
+.company-cont .company{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1 0 0px;
+    height: min-content;
+    max-width: 235px;
+    gap: 10px;
+    background-color: rgb(20, 20, 20);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    padding:18px 12px;
+}
+
+.company .company-name{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+.company .logo{
+    filter: invert(1);
+    width: 45px;
+
+}
