@@ -1,0 +1,125 @@
+.faqs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: min-content;
+    width: 100%;
+    flex: none;
+}
+
+
+.faqs-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 48px 32px;
+    gap: 40px;
+    flex: none;
+    max-width: 1000px;
+    height: min-content;
+    width:  100%;
+}
+
+
+.faqs-container .faqs-head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    flex: none;
+    height: min-content;
+    max-width: 550px;
+    width: 100%;
+}
+
+.faqs-head .heading{
+    font-size: 34px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.faqs-head .sub-heading{
+    font-size: 20px;
+    text-align: center;    
+    color: rgb(117, 117, 117);
+}
+
+/* Accordian Styles  */
+
+.faqs-main #accordian{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    width: 100%;
+    height: min-content;
+}
+
+#accordian li{
+    list-style: none;
+    width: 100%;
+    padding-left: 10px;
+    border: 1px solid rgb(240, 217, 217);
+    border-radius: 12px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#accordian li label{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+#accordian li label span{
+    transform: rotate(90deg);
+    font-size: 32px;
+    font-weight: 400;
+    color: rgb(100, 100, 100);
+    transition: all 0.5s ease-in-out;
+}
+
+
+#accordian label + input[type = 'checkbox']{
+    display: none;
+}
+
+#accordian .content{
+    padding: 0 10px;
+    color: rgb(100, 100, 100);
+    line-height: 26px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out, padding 0.3s ease-in-out;
+
+}
+
+#accordian label + input[type = 'checkbox']:checked + .content{
+    max-height: 400px;
+    /* padding: 10px; */
+
+}
+
+/* Select the parent <li> when its input is checked */
+/* #accordian label + input[type='checkbox']:checked + .content {
+    background-color: rgb(255, 0, 21);
+} */
+
+#accordian li:has(input[type='checkbox']:checked) {
+    background-color: rgba(230, 188, 188, 0.37);
+}
+
+#accordian li:has(input[type='checkbox']:checked) label span {
+    transform: rotate(315deg);
+    color: black;
+}
+
+
+#accordian li:has(input[type='checkbox']:checked) label span:active {
+    color: red;
+}
+
