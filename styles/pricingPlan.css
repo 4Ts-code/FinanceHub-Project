@@ -245,4 +245,26 @@
 }
 
 
+ /* 
+*****************
+Media Queries 
+*****************   */
+
+/* Smaller Screens  */
+
+
+
+@media (max-width:809px) {
+    .pricing-plan-cont{
+        gap: 32px;
+        padding: 48px 16px;
+    }
+
+    .pp-tail{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
  

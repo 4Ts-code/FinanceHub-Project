@@ -78,3 +78,40 @@
     width: 45px;
 
 }
+
+
+
+   /* 
+*****************
+Media Queries 
+*****************   */
+
+/* Smaller Screens  */
+
+
+@media (max-width:809px) {
+    .trustees-cont{
+        padding: 48px 16px;
+        gap: 32px;
+    }
+
+    .trustees-main .company-cont{
+        flex-direction: column;
+        
+        
+    }
+
+    .company-cont .company{
+        flex: none;
+        width: 100%;
+        max-width: unset;
+
+        justify-content: center;
+        
+    }
+
+    
+    
+}
+
+

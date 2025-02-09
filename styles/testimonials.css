@@ -221,3 +221,22 @@
       transform: translateX(0); /* Return to original position */
     }
   }
+
+
+
+   /* 
+*****************
+Media Queries 
+*****************   */
+
+/* Smaller Screens  */
+
+
+@media (max-width:809px) {
+    .testimonials-cont{
+        padding: 48px 16px;
+        gap: 32px;
+        max-width: 900px;
+    }
+}
+

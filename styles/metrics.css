@@ -103,3 +103,40 @@
     color: rgb(100, 100, 100);
     text-align: center;
  }
+
+
+
+ /* 
+*****************
+Media Queries 
+*****************   */
+
+/* Smaller Screens  */
+
+
+/* @media (max-width:809px) {
+   .metrics-head .heading{
+      font-size: 32px;
+      font-weight: 500;
+   }
+
+   .metrics-head .sub-heading{
+      font-size: 18px;
+   }
+
+
+   .metric-number{
+      font-size: 28px;
+      font-weight: 600;
+   }
+
+   .metric-title{
+      font-size: 20px;
+      font-weight: 500;
+   }
+
+   .explanation{
+      font-size: 14px;
+
+   }
+} */

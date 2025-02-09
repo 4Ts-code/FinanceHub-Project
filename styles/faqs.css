@@ -123,3 +123,24 @@
     color: red;
 }
 
+
+
+/* 
+*****************
+Media Queries 
+*****************   */
+
+/* Smaller Screens  */
+
+
+@media (max-width:809px) {
+    .faqs-container{
+        padding: 30px 16px 48px;
+        gap: 32px;
+    }
+
+    .faqs-container .faqs-head{
+        max-width: unset;
+    }
+}
+

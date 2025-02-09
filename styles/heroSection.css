@@ -39,7 +39,7 @@
     align-items: flex-start;
     gap: 44px;
 
-    flex: none;
+    
     flex-wrap: nowrap;
     height: min-content;
     /* max-width: 500px; */
@@ -112,6 +112,9 @@
 
 .download-app{
     display: flex;
+    /* align-self: center; */
+    align-items: center;
+    justify-content: center;
     flex: none;
     gap: 10px;
 }
@@ -173,3 +176,38 @@
     object-fit: cover;
     object-position: center center;
 }
+
+
+
+/* 
+*****************
+Media Queries 
+*****************   */
+
+/* Smaller Screens  */
+
+
+
+@media (max-width:809px) {
+    .hero-section{
+        padding: 100px 16px 0;
+    }
+
+    .hero-container{
+        flex-direction: column;
+        gap: 32px;
+        width: 100%;
+        justify-content: center;
+    }
+
+
+    .partA{
+        gap: 24px;
+        width: 100%;
+        flex: none;
+    }
+
+    
+}
+
+

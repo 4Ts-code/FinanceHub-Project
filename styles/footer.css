@@ -150,7 +150,7 @@ footer{
 
 }
 
-.schedule-cont{
+.schedule-cont {
     background-color: rgb(39, 39, 42);
     display: flex;
     align-items: center;
@@ -161,6 +161,14 @@ footer{
     cursor: pointer;
     /* width: min-content; */
     height: min-content;
+
+
+
+}
+
+.assistance a{
+    text-decoration: none;
+    color: white;
 }
 
 .logo-and-text{
@@ -310,11 +318,91 @@ footer{
     height: min-content;
 }
 
-.links-cont .links a{
+.links-cont .links a,
+.about a{
     color: rgb(100, 100, 100);
     transition: color 0.3s ease;
 }
 
-.links-cont .links a:hover{
+.links-cont .links a:hover,
+.about a{
     color: rgb(141, 141, 141);
+}
+
+
+
+/* 
+*****************
+Media Queries 
+*****************   */
+
+/* Smaller Screens  */
+
+
+@media (max-width:809px) {
+    .footer-cont{
+        gap: 64px;
+        padding: 140px 0 64px;
+    }
+
+    .logoipsum-cont{
+   
+        height: 120px;
+        top: -20px;
+    }
+    .footer-cont .logoipsum img{
+        width: 50px;
+    }
+
+    .footer-cont .logoipsum p{
+        font-size: 55px;
+        font-weight: 700;
+    }
+
+
+    .assistance-cont{
+        padding: 0 16px;
+    }
+
+    .assistance{
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 24px;
+        flex: none;
+        max-width: unset;
+        width: 100%;
+        padding: 10px;
+        
+    }
+
+    .assistance .text{
+        width: 100%;
+    }
+
+    .schedule-anchor-cont {
+        width: 100%;
+        
+    }
+
+    .schedule-cont{
+        justify-content: space-between;
+    }
+
+
+    
+
+    .logo-and-text .schedule{
+        gap: 2px;
+    }
+    
+
+    .footer-main{
+        flex-direction: column-reverse;
+        gap: 64px;
+    }
+
+    .links-cont,
+    .footer-main .about{
+        width: 100%;
+    }
 }

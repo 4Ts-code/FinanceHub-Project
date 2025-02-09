@@ -71,6 +71,7 @@
 .join-now-cont .img-cont{
     /* background-color: crimson; */
     display: flex;
+    justify-content: center;
     flex: none;
     width: 100%;
     overflow: visible;
@@ -83,4 +84,41 @@
     height: 100%;
     object-fit: cover;
     
+}
+
+
+
+
+
+/* 
+*****************
+Media Queries 
+*****************   */
+
+/* Smaller Screens  */
+
+
+@media (max-width:809px) {
+    .join-now{
+        padding: 48px 16px 0px;
+    }
+
+    .join-now-cont{
+        gap: 40px;
+    }
+/* 
+    .ready .heading{
+        font-size: 32px;
+        
+    } */
+
+    .image-cont img{
+        width: 140px;
+    }
+
+    .join-now-cont .img-cont img{
+        width: 80%;
+        /* object-fit: contain; */
+        height: 80%;
+    }
 }
