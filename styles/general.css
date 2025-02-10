@@ -2,17 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Inter, Roboto, sans-serif;
+    font-family: Inter,sans-serif;
     scroll-behavior: smooth;
 }
 
 
-
-
 .main{
-    
-    
-
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
