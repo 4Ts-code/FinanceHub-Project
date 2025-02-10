@@ -31,8 +31,8 @@
     <meta name="twitter:url" content="https://finance-hub-project.vercel.app">
 
 
-     <!-- Open Graph (Optional for rich previews) -->
-     <meta property="og:locale" content="en_US">
+    <!-- Open Graph (Optional for rich previews) -->
+    <meta property="og:locale" content="en_US">
 
 
 
@@ -63,13 +63,61 @@
     <!-- Header First  -->
     <div class="main" style="min-height: 100vh;width: auto;">
         <header>
+
+            <!-- sidebar  -->
+
+            <nav class="sidebar">
+                
+                <div class="product">
+                    <p>Product</p>
+                    <div class="links">
+                        <a href="">How It Works</a>
+                        <a href="">Solutions</a>
+                    </div>
+
+                
+                </div>
+
+
+                <div class="product">
+                    <p>Resources</p>
+
+                    <div class="links">
+                        <a  href="">Blog</a>
+                        <a href="">About</a>
+                        <a href="">Careers</a>
+                        <a href="">Spring Release</a>
+                    </div>
+                    
+                    
+                </div>
+
+
+                <a  class="ref" href="#pricing">Pricing</a>
+
+
+                <a  class="ref" href="#testimonials">Testimonials</a>
+
+
+                <a  class="ref" href="#faqs">FAQ</a>
+
+                <a  href="" class="button card-button popular-button">Get Started</a>
+
+                
+
+                
+            </nav>
+
+
+
+            <!-- original  -->
             <div class="left-section">
                 <div class="logo">
                     <img src="./Public/finance-hub-logo.svg" alt="finance-hub-logo">
                 </div>
                 <div class="name">FinanceHub</div>
             </div>
-            <div class="middle-section">
+            <div class="middle-section hideOnMobile">
                 <div class="nav">
                     <a href="#">Product</a>
                 </div>
@@ -88,9 +136,12 @@
                 
             </div>
 
-            <div class="right-section">
+            <div class="right-section hideOnMobile">
                 <button class="contact-us">Contact Us</button>
             </div>
+
+            <img onclick=showSidebar() class="menu" src="./Public/menu.svg" alt="">
+            <img onclick=hideSidebar() class="close" src="./Public/close.svg" alt="">
             
         </header>
         
@@ -475,7 +526,7 @@
             <!-- Start of Testimonials -->
 
 
-            <article class="testimonials">
+            <article class="testimonials" id="testimonials">
                 <div class="testimonials-cont">
                     <div class="header">
                         <p class="main-heading">Testimonials</p>
@@ -921,4 +972,6 @@
          <!-- End of footer section  -->
     </div>
 </body>
+
+<script src="./scripts/sidebar.js"></script>
 </html>

@@ -2,6 +2,7 @@ header{
    display: flex;
    background-color: rgba(0, 0, 0, 0.938);
    justify-content: space-between;
+   align-items: center;
    
    height: 70px;
    position: fixed;
@@ -70,4 +71,157 @@ header{
     font-weight: 500;
     cursor: pointer;
 }
+
+
+/* hamburger menu styles  */
+
+header .menu,
+header .close{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+ /* Sidebar Slides  */
+
+
+ .sidebar{
+    position: fixed;
+    top: 70px;
+    right: 0;
+    height: 0px;
+    width: 100%; 
+    z-index: 999;
+    background-color: black;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: none;
+    padding: 0 16px 80px;
+    overflow-y: auto; /* Enables scrolling inside sidebar */
+
+    /* animations */
+
+    transition: height 0.5s ease-in;
+    opacity: 0;
+    pointer-events: none;
+    
+}
+
+.sidebar.show{
+    height: 100vh;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* .sidebar.hide{
+    height: 0px;
+} */
+
+.sidebar .product{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    height: min-content;
+    width: 100%;
+    padding: 15px 0;
+}
+
+.product p{
+    font-weight: 700;
+    color: rgb(130, 130, 130);
+}
+
+
+.product .links{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    height: min-content;
+    width: 100%;
+    /* align-items: center; */
+    justify-content: center;
+
+    padding: 5px;
+    
+
+    
+}
+.sidebar a {
+    text-decoration: none;
+    color: white;
+}
+
+header .sidebar .button{
+    color: black;
+}
+
+
+
+
+.product .links a{
+    
+    width: 100%;
+
+    
+
+    border-radius: 10px;
+
+    height: 50px;
+
+
+    display: flex;
+    align-items: center;
+
+    padding: 0px 10px;
+    /* justify-content: center; */
+    transition: all 0.2s ease-in-out;
+}
+
+.product .links a:hover{
+    background-color: rgb(29, 26, 26);
+}
+
+
+
+.sidebar .ref{
+    padding: 10px 0;
+    
+
+}
+
+ /* 
+*****************
+Media Queries 
+*****************   */
+
+/* Smaller Screens  */
+
+@media (max-width:809px) {
+    .hideOnMobile{
+        display: none;
+    }
+
+    header .menu{
+        display: block;
+    }
+
+    header{
+        justify-content: space-between;
+    }
+
+    header .menu,
+    header .close{
+        margin-right: 30px;
+    }
+
+    
+}
+
+
 
