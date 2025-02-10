@@ -13,6 +13,7 @@ header{
 
 
    backdrop-filter: blur(10px);
+
 }
 
 .left-section{
@@ -213,6 +214,7 @@ Media Queries
 
     header{
         justify-content: space-between;
+        background-color: black;
     }
 
     header .menu,
