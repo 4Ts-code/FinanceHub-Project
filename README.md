@@ -49,7 +49,7 @@ Follow these steps to get the project running on your local machine:
 
 ```bash
 git clone https://github.com/emmaowusu294/FinanceHub-Project
-cd finance-hub
+cd FinanceHub-Project
 ```
 
 ### 2️⃣ Open the Project  
