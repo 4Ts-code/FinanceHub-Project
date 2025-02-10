@@ -222,7 +222,7 @@
 
 
 
-.grid-card .card-button{
+ .card-button{
     background-color: white;
     color: black;
     width: 100%;
@@ -234,13 +234,14 @@
     border-radius: 8px;
 }
 
-.grid-card .popular-button{
+ .popular-button{
+    color: black;
     background-color:rgb(239, 255, 167) ;
-    border: 5px solid rgb(242, 254, 141);
+    border: 1px solid rgb(242, 254, 141);
     transition: all 0.2s ease-in;
 }
 
-.grid-card .popular-button:hover{
+ .popular-button:hover{
     background-color: rgb(224, 240, 81);
 }
 
