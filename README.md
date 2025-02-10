@@ -102,7 +102,7 @@ OR use **Live Server** in VS Code for real-time updates.
  
 📧 **Email:** eo8407272@gmail.com  
 
-📞 **Contact** +233 536746852
+📞 **Contact:** +233 536746852
 
 ---
 
